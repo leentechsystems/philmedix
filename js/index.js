@@ -41,10 +41,11 @@ function onOffline() {
 }
 
 function onOnline() {
+    $("body").removeClass('reload');
     $("#loader").removeClass('hide');
     $("#message").addClass('hide');
      setTimeout(function(){
-            window.location = 'http://www.philmedix.com/?en4_maint_code=1234';
+            window.location = 'http://www.philmedix.com/walkthrough/start.php?mobile=1';
      }, 3000);
 }
 
