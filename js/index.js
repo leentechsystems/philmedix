@@ -44,7 +44,7 @@ function onOnline() {
     $("#loader").removeClass('hide');
     $("#message").addClass('hide');
      setTimeout(function(){
-            window.location = 'http://www.philmedix.com/walkthrough/start.php?mobile=1';
+            window.location = 'http://www.philmedix.com/?en4_maint_code=1234';
      }, 3000);
 }
 
