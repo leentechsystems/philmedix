@@ -50,6 +50,11 @@ function onOnline() {
     $("#sub_message").addClass('hide');
     $("#loadingProgressG").removeClass('spinner2');
     $("#loadingProgressG").addClass('spinner');
+    $("body").addClass('reload');
+    $("#loader").addClass('hide');
+    $("#main_message").text('No Internet Connection');
+    $("#Loading").text('Press Back Key to Exit or Tap to Retry');
+    $("loadingProgressG").addClass('hide');
     //var ref;
     //setTimeout(function(){
              $(location).attr('href','http://philmedix.com/pages/homepage?en4_maint_code=1234');
