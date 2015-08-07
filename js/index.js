@@ -50,7 +50,7 @@ function onOnline() {
     $("#sub_message").addClass('hide');
     $("#loadingProgressG").removeClass('spinner2');
     $("#loadingProgressG").addClass('spinner');
-    $("body").addClass('reload');
+   
     $("#loader").addClass('hide');
     $("#main_message").text('No Internet Connection');
     $("#Loading").text('Press Back Key to Exit or Tap to Retry');
