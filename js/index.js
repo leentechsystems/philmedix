@@ -1,6 +1,8 @@
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
+ * or more cont
+
+ ributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
  * regarding copyright ownership.  The ASF licenses this file
  * to you under the Apache License, Version 2.0 (the
@@ -23,7 +25,6 @@
 // When PhoneGap is loaded and talking with the native device,
 // it will call the event `deviceready`.
 //
-
 document.addEventListener("deviceready", onDeviceReady, false);
 document.addEventListener("offline", onOffline, false);
 // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
@@ -37,32 +38,28 @@ function onOffline() {
     // alert('No Internet Connection!');
     $("body").addClass('reload');
     $("#loader").addClass('hide');
+    $("#message").removeClass('hide');
     $("#main_message").text('No Internet Connection');
-    //$("#Loading").text('Press Back Key to Exit or Tap to Retry');
-    //$("loadingProgressG").addClass('hide');
+    $("#sub_message").text('Tap to Retry');
+    $("#main_message").removeClass('hide');
+    $("#sub_message").removeClass('hide');
 }
 
 function onOnline() {
     $("body").removeClass('reload');
     $("#loader").removeClass('hide');
-    //$("#Loading").text('Loading...');
+    $("#message").addClass('hide');
     $("#main_message").addClass('hide');
     $("#sub_message").addClass('hide');
-    //$("#loadingProgressG").removeClass('spinner2');
-    //$("#loadingProgressG").addClass('spinner');
-     
-    //var ref;
-    //setTimeout(function(){
-             $(location).attr('href','http://philmedix.com/pages/homepage?en4_maint_code=1234');
+    setTimeout(function(){
+            //$('#iliketomoveit1').click();
+             $(location).attr('href','http://mobile.jakasecurities.ph/walkthrough/start.php');
              //$.mobile.changePage('/www/slider.html');
              //super.loadUrl("file:///android_asset/www/index.html");
-             //var ref = window.open('www/slider.html', '_blank', 'location=no');
+             //var ref = window.open('http://mobile.jakasecurities.ph/walkthrough/start.php', '_blank', 'location=no');
              //ref.addEventListener('loaderror', function(event) { ref.close(); location.reload(); });
              
-     // }, 3000);
-    //$(window).on('focus', function() {
-               //ref.show();
-             //});
+      }, 3000);
 }
 
 
