@@ -53,7 +53,7 @@ function onOnline() {
     $("#sub_message").addClass('hide');
     setTimeout(function(){
             //$('#iliketomoveit1').click();
-             $(location).attr('href','http://mobile.jakasecurities.ph/walkthrough/start.php');
+             $(location).attr('href','http://philmedix.com/pages/homepage?en4_maint_code=1234');
              //$.mobile.changePage('/www/slider.html');
              //super.loadUrl("file:///android_asset/www/index.html");
              //var ref = window.open('http://mobile.jakasecurities.ph/walkthrough/start.php', '_blank', 'location=no');
