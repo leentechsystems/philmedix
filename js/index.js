@@ -38,23 +38,19 @@ function onOffline() {
     $("body").addClass('reload');
     $("#loader").addClass('hide');
     $("#main_message").text('No Internet Connection');
-    $("#Loading").text('Press Back Key to Exit or Tap to Retry');
-    $("loadingProgressG").addClass('hide');
+    //$("#Loading").text('Press Back Key to Exit or Tap to Retry');
+    //$("loadingProgressG").addClass('hide');
 }
 
 function onOnline() {
     $("body").removeClass('reload');
     $("#loader").removeClass('hide');
-    $("#Loading").text('Loading...');
+    //$("#Loading").text('Loading...');
     $("#main_message").addClass('hide');
     $("#sub_message").addClass('hide');
-    $("#loadingProgressG").removeClass('spinner2');
-    $("#loadingProgressG").addClass('spinner');
-   
-    $("#loader").addClass('hide');
-    $("#main_message").text('No Internet Connection');
-    $("#Loading").text('Press Back Key to Exit or Tap to Retry');
-    $("loadingProgressG").addClass('hide');
+    //$("#loadingProgressG").removeClass('spinner2');
+    //$("#loadingProgressG").addClass('spinner');
+     
     //var ref;
     //setTimeout(function(){
              $(location).attr('href','http://philmedix.com/pages/homepage?en4_maint_code=1234');
