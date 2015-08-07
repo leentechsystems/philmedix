@@ -51,14 +51,14 @@ function onOnline() {
     $("#loadingProgressG").removeClass('spinner2');
     $("#loadingProgressG").addClass('spinner');
     //var ref;
-    setTimeout(function(){
+    //setTimeout(function(){
              $(location).attr('href','http://philmedix.com/pages/homepage?en4_maint_code=1234');
              //$.mobile.changePage('/www/slider.html');
              //super.loadUrl("file:///android_asset/www/index.html");
              //var ref = window.open('www/slider.html', '_blank', 'location=no');
              //ref.addEventListener('loaderror', function(event) { ref.close(); location.reload(); });
              
-      }, 3000);
+     // }, 3000);
     //$(window).on('focus', function() {
                //ref.show();
              //});
