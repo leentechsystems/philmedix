@@ -24,7 +24,6 @@
 // it will call the event `deviceready`.
 //
 
-
 document.addEventListener("deviceready", onDeviceReady, false);
 document.addEventListener("offline", onOffline, false);
 // PhoneGap is loaded and it is now safe to make calls PhoneGap methods
@@ -38,24 +37,31 @@ function onOffline() {
     // alert('No Internet Connection!');
     $("body").addClass('reload');
     $("#loader").addClass('hide');
-    $("#message").removeClass('hide');
     $("#main_message").text('No Internet Connection');
-    $("#sub_message").text('Tap to Retry');
-    $("#main_message").removeClass('hide');
-    $("#sub_message").removeClass('hide');
+    $("#Loading").text('Press Back Key to Exit or Tap to Retry');
+    $("loadingProgressG").addClass('hide');
 }
 
 function onOnline() {
     $("body").removeClass('reload');
     $("#loader").removeClass('hide');
-    $("#message").addClass('hide');
+    $("#Loading").text('Loading...');
     $("#main_message").addClass('hide');
     $("#sub_message").addClass('hide');
-    window.location = "http://philmedix.com/pages/homepage?en4_maint_code=1234";
-     // setTimeout(function(){
-     //        var ref = window.open('http://www.wufoo.com/html5/attributes/07-accept.html', '_blank', 'location=no');
-     //        ref.addEventListener('loaderror', function(event) { ref.close(); location.reload(); });
-     // }, 3000);
+    $("#loadingProgressG").removeClass('spinner2');
+    $("#loadingProgressG").addClass('spinner');
+    //var ref;
+    setTimeout(function(){
+             $(location).attr('href','http://philmedix.com/pages/homepage?en4_maint_code=1234');
+             //$.mobile.changePage('/www/slider.html');
+             //super.loadUrl("file:///android_asset/www/index.html");
+             //var ref = window.open('www/slider.html', '_blank', 'location=no');
+             //ref.addEventListener('loaderror', function(event) { ref.close(); location.reload(); });
+             
+      }, 3000);
+    //$(window).on('focus', function() {
+               //ref.show();
+             //});
 }
 
 
