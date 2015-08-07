@@ -1154,9 +1154,5 @@ stretchRight
 	background:
 		url(../img/cloud1.png) repeat-x,
 		url(../img/cloud2.png) repeat-x;
-	-webkit-animation: scene2 40s linear infinite ;
-	-moz-animation: scene2 40s linear infinite ;
-	-o-animation: scene2 40s linear infinite ;
-	-ms-animation: scene2 40s linear infinite ;
-	animation: scene2 40s linear infinite ;
+
 }
