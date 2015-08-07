@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.photobook" version="1" versionCode = "1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Jaka</name>
+<widget id="com.philmedix" version="1" versionCode = "1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>PhilMedix</name>
     <description>
-        Jaka official mobile application
+        PhilMedix official mobile application
     </description>
-    <author email="admin@jaka.com" href="http:/jaka.com/">
-        admin@jaka.com
+    <author email="admin@philmedix.com" href="http://philmedix.com/">
+        admin@philmedix.com
     </author>
 
     <content src="index.html" />
@@ -42,7 +42,7 @@
     <icon src="res/icons/ios/icon-72-2x.png" gap:platform="ios" width="144" height="144" />
 
     <access origin="*" subdomains="true" />
-    <preference name="Fullscreen" value="true" />
+    <preference name="Fullscreen" value="false" />
     <preference name="orientation" value="portrait" />
     <preference name="phonegap-version" value="3.6.3" />
 
